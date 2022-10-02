@@ -4,15 +4,15 @@
 class Stack
 {
 private:
-    float * top;
+    int elements;
     float * data = new float[0];
 
 public:
     Stack();
-    void stack(float element);
+    void add(float element);
     float pop();
     bool is_empty()const;
-    
+
     ~Stack();
 };
 
